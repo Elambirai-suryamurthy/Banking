@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home_banking</title>
+    <link rel="stylesheet"   
+href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"   
+integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"   
+crossorigin="anonymous">  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<style>
+.box
+{
+    position: absolute;
+    top:75px;
+    width: 70%;
+    height: 1500px;
+    margin-left: 300px;
+    background-color: #F6F6F6;
+    border: 2px solid #F6F6F6;
+    
+}
+.bold
+{
+    color: #15C6ED;
+}
+.headings
+{
+    position: absolute;
+    top: 26px;
+    left: 320px;
+    font-weight: 10px;
+
+}
+/* .container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+  width: 90%;
+  height: 90vh;
+}
+
+.container i {
+  padding: 20px;
+  display: block;
+  font-size: 10px;
+  transition: all 3s ease;
+}
+
+.container i:hover {
+  transform: rotateZ(-180deg);
+} */
+.not{
+    position: absolute;
+    top: 28px;
+    right: 480px;
+    font-size: 16px;
+}
+.con{
+    position: absolute;
+    top: 28px;
+    right: 330px;
+    font-size: 16px;
+}
+.im{
+    width: 100%;
+    height: 160px;
+}
+.clo
+{
+    position: absolute;
+    top:37px;
+    width: 76px;
+    height: 76px;
+    left: 19px;
+}
+.head2
+{
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 112px;
+}
+#demo
+{
+    color: white;
+    position: absolute;
+    top: 89px;
+    left: 112px;  
+    font-size: 15px;  
+}
+.savings
+{
+    
+    position: absolute;
+    top: 40px;
+    right: 372px;
+    font-size: 15px;
+    color: white;
+
+}
+.amount1
+{
+    position: absolute;
+    top: 60px;
+    right: 349px;
+    font-size: 30px;
+    color: white;
+}
+.current
+{
+    
+    position: absolute;
+    top: 40px;
+    right: 140px;
+    font-size: 15px;
+    color: white;
+
+}
+.amount2
+{
+    position: absolute;
+    top: 60px;
+    right: 117px;
+    font-size: 30px;
+    color: white;
+}
+.head3
+{
+    
+    position: absolute;
+    top: 47px;
+    left: 52px;
+    font-size: 20px;
+}
+.btn
+{
+    position: absolute;
+    top: 47px;
+    border-radius: 16px;
+    right: 45px;
+    background-color: #5CA4E0;
+    font-size: 15px;
+    width: 200px;
+}
+.box1
+{
+    position: relative;
+    top:43px;
+    width: 30%;
+    height: 900px;
+    margin-left: 900px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius:8px;
+    
+}
+.pro
+{
+    position: relative;
+    top: 10px;
+    left: 120px;
+    width: 120px;
+    height: 120px;
+}
+.head4
+{
+    position: relative;
+    top: 19px;
+    left: 119px;
+    font-size: 25px;
+}
+.san{
+    position: relative;
+    top: 8px;
+    left: 112px;
+    font-size: 15px;
+}.lin1
+{
+    position: relative;
+    top: 4px;
+    left: 119px;
+    font-size: 15px; 
+}
+.box2
+{
+    position: absolute;
+    top:109px;
+    width: 90%;
+    height: 110px;
+    margin-left: 30px;
+    background-color: white;
+    border: 2px solid white;
+    opacity: 1;
+    border-radius:8px;
+    
+}
+.box2:hover{
+    opacity:0.6;
+    top:107px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.box3
+{
+    opacity: 1;
+    position: absolute;
+    top:239px;
+    width: 90%;
+    height: 110px;
+    margin-left: 30px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius:8px;
+    
+}
+.box3:hover{
+    opacity:0.6;
+    top:237px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.box4
+{
+    opacity: 1;
+    position: absolute;
+    top:369px;
+    width: 90%;
+    height: 520px;
+    margin-left: 30px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius:8px;
+    
+}
+.box4:hover{
+    
+    top:365px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.vl {
+    position: absolute;
+    top: 119px;
+    left: 30px;
+  border-left: 30px solid black;
+  height: 200px;
+}
+.current1{
+    position: absolute;
+    top:19px;
+    left: 40px;
+    color:#5CA4E0;
+    opacity:1;
+    font-size: 16px; 
+}
+.cardno1{
+    position: absolute;
+    top:45px;
+    left: 40px;
+    font-size: 18px; 
+    color: gray;
+    opacity:1;
+}
+.current1:hover,.cardno1:hover{
+    opacity:0.6;
+   
+}
+
+/* .current2{
+    position: absolute;
+    top:19px;
+    left: 40px;
+    color:#5CA4E0;
+    font-size: 16px; 
+}
+.cardno2{
+    position: absolute;
+    top:45px;
+    left: 40px;
+    font-size: 18px; 
+    color: gray;
+}
+.current3{
+    position: absolute;
+    top:19px;
+    left: 40px;
+    color:#5CA4E0;
+    font-size: 16px; 
+}
+.cardno3{
+    position: absolute;
+    top:45px;
+    left: 40px;
+    font-size: 18px; 
+    color: gray;
+} */
+.amount3
+{
+    position: absolute;
+    top: 140px;
+    right: 287px;
+    font-size: 26px;
+    color: gray;
+    font-weight: 20px;
+
+}
+.amount4
+{
+    position: absolute;
+    top: 40px;
+    right: 237px;
+    font-size: 26px;
+    color: gray;
+    font-weight: 20px;
+
+}
+.avail1
+{
+    position: absolute;
+    top: 147px;
+    right: 109px;
+    font-size: 16px;
+    color: gray;
+    font-weight: 20px;
+
+}
+.avail
+{
+    position: absolute;
+    top: 37px;
+    right: 67px;
+    font-size: 16px;
+    color: gray;
+    font-weight: 20px;
+
+}
+.amount6
+{
+    position: absolute;
+    top: 167px;
+    right: 107px;
+    font-size: 16px;
+    color: gray;
+    font-weight: 20px;
+
+}
+.amount7
+{
+    position: absolute;
+    top: 57px;
+    right: 67px;
+    font-size: 16px;
+    color: gray;
+    font-weight: 20px;
+
+}
+/* .amount5
+{
+    position: absolute;
+    top: 30px;
+    right: 237px;
+    font-size: 26px;
+    color: gray;
+    font-weight: 20px;
+
+} */
+.link2
+{
+    position: absolute;
+    top:115px;
+    left: 40px;
+    font-size: 18px; 
+   
+}
+.fas
+{
+    position: absolute;
+    top:115px;
+    left: 390px;
+    font-size: 18px; 
+   
+}
+.im1{
+    position: absolute;
+    top:185px;
+    left: 40px;
+  width: 160px;
+  height: 100px;
+}
+.card1{
+    position: absolute;
+    top:240px;
+    left: 220px;
+    color:#5CA4E0;
+    font-size: 16px; 
+}
+.cardno4{
+    position: absolute;
+    top:260px;
+    left: 220px;
+    font-size: 18px; 
+    color: gray;
+} 
+.line{
+    position: absolute;
+    top: 300px;
+    width: 730px;
+    color:gray;
+    left: 40px;
+}
+.line1{
+    position: absolute;
+    top: 50px;
+    width: 750px;
+    color:gray;
+    left: 30px;
+}
+.line2{
+    position: absolute;
+    top: 105px;
+    width: 750px;
+    color:gray;
+    left: 30px;
+}
+.line3{
+    position: absolute;
+    top: 165px;
+    width: 730px;
+    color:gray;
+    left: 30px;
+}
+.line4{
+    position: absolute;
+    top: 225px;
+    width: 730px;
+    color:gray;
+    left: 30px;
+}
+.box5{
+
+    position: absolute;
+    top:349px;
+    width: 90%;
+    height: 130px;
+    margin-left: 30px;
+    background-color:#F8F8F8;
+    border: 1px solid #E8E8E8;
+    border-radius:8px;
+    
+}
+.para1
+{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: gray;
+}
+.head5
+{
+    
+    position: absolute;
+    top: 920px;
+    left: 56px;
+    font-size: 22px;
+    font-weight: 20px;
+}
+
+.collapsible {
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: white;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: blue;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.box6{
+
+    position: absolute;
+    top:999px;
+    width: 90%;
+    height: 310px;
+    margin-left: 30px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius:8px;
+    
+
+}
+table{
+    width: 100%;
+    background-color: white;
+}
+.box7{
+
+position: absolute;
+top:399px;
+width: 90%;
+height: 130px;
+margin-left: 30px;
+background-color:#F8F8F8;
+border: 1px solid #E8E8E8;
+border-radius:8px;
+
+}
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+    
+        <div class="row">
+          <div class=" top">
+           <h4 class="headings"><b class="bold">HOME</b>BANKING</h4>
+          
+          <p class="not">Notification</p>
+          <p class="con">Conversations</p>
+          
+          </div>
+          <div class=" box">
+           <div class="nav">
+               <img src="back2.jpg" alt=""class="im"> <img src="clockl.png" alt="srgsdr"class="clo">
+              <h3 class="head2">Welcome back,Jane!</h3>
+              <p id="demo"></p>
+              <p class="savings">Savings Account</p>
+              <p class="amount1">$2,620.00</p>
+              <p class="current">Current Account</p>
+              <p class="amount2">$1,742.66</p>
+           </div>
+           <div class="row">
+                <div class="col-sm-8">
+                    <h4 class="head3">My Accounts</h4>
+                    <button type="button" class="btn btn-info">New Transfer</button>
+                    <div class="box2">
+                    <p class="current1">Current Account</p>
+                    <p class="cardno1">4422 2156 0567 9000</p>
+
+                    <div class="v1"></div>
+                   
+                    </div>
+                    <p class="amount3">$1,742.66</p>
+                    <p class="avail1">Available</p>
+                    <p class="amount6"> $6396.32</p>
+                    <div class="box3">
+                        <p class="current1">Savings Account</p>
+                        <p class="cardno1">4422 2156 0567 9113</p>
+                        <p class="amount4">$2,620.00</p>
+                        <p class="avail">Available</p>
+                        <p class="amount7"> $6396.32</p>
+                    </div>
+                    <div class="box4">
+                        <p class="current1">Christopher Account</p>
+                        <p class="cardno1">4422 2156 0567 9256</p>
+                        <p class="amount4">$2,033.00</p>
+                        <p class="avail">Available</p>
+                        <p class="amount7"> $6396.32</p>
+                        <a href="#" class="link2">Credit cards associated with this account</a>&nbsp;<i class='fas fa-angle-up'></i>
+                        <img src="card.png" class="im1" alt="">
+                        <p class="card1">Credit Card</p>
+                        <p class="cardno4">4422 2156 0567 9000</p>
+                        <hr class="line">
+                        <div class="box5">
+                            <p class="para1"> The   Essential Card  is  a  Credit  card with an overdraft facilty (credit facilty linked to your personel account)and <br>
+                                only for the people over 18. The general condition of the Essential Card Available from any Essential branch.<br>
+                            Credit cards also offered without credit. Find out more in local branch.</p>
+                        </div>
+                        
+                    </div>
+                    <h3 class="head5">Other Operations</h3>
+
+<div class="box6">
+        <button class="collapsible">My Deposites</button>
+        <div class="content">
+                <table rules="rows">  
+                        <thead>  
+                            <tr>  
+                                
+                                <th>Date</th>  
+                                <th>Concept</th>  
+                                <th>Amount</th>  
+                            </tr>  
+                        </thead>  
+                      
+                        <tbody>  
+                            <tr>  
+                                
+                                <td>10/18/2017</td>  
+                                <td>Loan payment</td>  
+                                <td>+$210.90</td>  
+                            </tr>  
+                      
+                            <tr>  
+                                <td>10/10/2017</td>  
+                                <td>Theater tickets</td>  
+                                <td>+$245.90</td>  
+                                 
+                            </tr>  
+                      
+                            <tr>  
+                                
+                                <td>10/09/2017</td>  
+                                <td>Cash Deposit</td>  
+                                <td>+$47.00</td>  
+                            </tr>  
+                        </tbody>  
+                    </table>  
+       </div>
+       <hr class="line1">
+        <button class="collapsible">Loans</button>
+        <div class="box7 content box7">
+        <div class="box7">
+            hadkhasvdhj
+        </div>
+       </div>
+       <hr class="line2">
+        <button class="collapsible">Creadit Lines</button>
+        <div class="content">
+        </div>
+        <hr class="line3">
+        <button class="collapsible">Trade& Finance</button>
+        <div class="content">
+       </div>
+       <hr class="line4">
+</div>
+<!-- <p>Collapsible Set:</p>
+<button class="collapsible">Open Section 1</button>
+<div class="content">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Open Section 2</button>
+<div class="content">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Open Section 3</button>
+<div class="content">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div> -->
+
+                </div>
+                <div class="col-sm-4 box1">
+                <img src="download1.png" alt="" class="pro">
+                <h3 class="head4">Jane Doe</h3>
+                <p class="san">San Fransisco- USA</p>
+               <u> <a href="#" class="lin1">User Settings</a></u>
+                </div>
+               
+              </div>
+
+      </div>
+          </div>
+          <div class=""></div>
+        </div>
+       
+      <script>
+      var nowDate = new Date(); 
+       var date = (nowDate.getMonth()+1)+'/'+nowDate.getDate()+'/'+nowDate.getFullYear();
+       document.getElementById("demo").innerHTML = date;
+
+       var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+      </script>
+</body>
+</html>
